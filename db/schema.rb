@@ -10,9 +10,54 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
 
+ActiveRecord::Schema.define(version: 2021_08_28_224242) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "collaborators", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_collaborators_on_project_id"
+    t.index ["user_id"], name: "index_collaborators_on_user_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "name"
+    t.string "summary"
+    t.string "mod_number"
+    t.bigint "owner_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["owner_id"], name: "index_projects_on_owner_id"
+  end
+
+  create_table "resources", force: :cascade do |t|
+    t.string "name"
+    t.string "tags", default: [], array: true
+    t.bigint "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_resources_on_project_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "slack_handle"
+    t.string "github_handle"
+    t.string "working_styles", default: [], array: true
+    t.string "cohort"
+    t.string "pronouns"
+    t.string "github_access_token"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "collaborators", "projects"
+  add_foreign_key "collaborators", "users"
+  add_foreign_key "projects", "users", column: "owner_id"
+  add_foreign_key "resources", "projects"
 end
