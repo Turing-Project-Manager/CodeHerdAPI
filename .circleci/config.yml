@@ -36,7 +36,7 @@ jobs:
       - run: 
           name: set up DB
           command: |
-            bundle exec rake db:migrate
+            bundle exec rake db:{create,migrate}
           environment:
               DATABASE_URL: "postgres://circleci@localhost:5432/codeherd-be_test"
       - run: bundle exec rspec spec
