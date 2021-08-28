@@ -18,13 +18,13 @@ jobs:
     steps:
       - checkout
       - run: bundle install
-      - run:
-          name: set up DB
-          command: |
-            bundle exec rake db:create db:schema:load --trace
-            bundle exec rake db:migrate
-          environment:
-              DATABASE_URL: "postgres://circleci@localhost:5432/codeherd-be_test"
+      # - run:
+      #     name: set up DB
+      #     command: |
+      #       bundle exec rake db:create db:schema:load --trace
+      #       bundle exec rake db:migrate
+      #     environment:
+      #         DATABASE_URL: "postgres://circleci@localhost:5432/codeherd-be_test"
       - run: bundle exec rspec spec
 
 workflows:
