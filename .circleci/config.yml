@@ -1,24 +1,7 @@
 version: 2.1
 orbs:
   ruby: circleci/ruby@0.1.2
-  heroku: circleci/heroku@1.2.6
 jobs:
-  # deliberately not doing anything in build so we can have a job called test which is what heroku workflow requires
-  build:
-    working_directory: ~/CodeHerdAPI
-    docker:
-      - image: cimg/ruby:2.7.2
-        environment:
-          PG_HOST: localhost
-          PG_USER: circleci
-      - image: postgres:13.3
-        environment:
-          POSTGRES_USER: circleci
-          POSTGRES_DB: codeherd-be_test
-          POSTGRES_HOST_AUTH_METHOD: trust
-    steps:
-      - checkout
-
   test:
     docker:
       - image: cimg/ruby:2.7.2
@@ -41,18 +24,7 @@ jobs:
               DATABASE_URL: "postgres://circleci@localhost:5432/codeherd-be_test"
       - run: bundle exec rspec spec
 
-
 workflows:
   heroku_deploy:
     jobs:
-      - build
-      - test:
-          requires:
-            - build
-      - heroku/deploy-via-git: # Use the pre-configured job, deploy-via-git
-          app-name: codherd
-          requires:
-            - test
-          filters:
-            branches:
-              only: main
+      - test
