@@ -3,6 +3,7 @@ orbs:
   ruby: circleci/ruby@0.1.2
 jobs:
   test:
+    working_directory: ~/CodeHerdAPI
     docker:
       - image: cimg/ruby:2.7.2
         environment:
