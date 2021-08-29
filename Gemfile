@@ -47,6 +47,7 @@ group :development, :test do
   gem 'faker'
   gem 'database_cleaner-active_record'
   gem 'shoulda-matchers'
+  gem 'graphiql-rails'
 end
 
 group :development do
