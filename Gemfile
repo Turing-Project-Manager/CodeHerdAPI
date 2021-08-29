@@ -32,6 +32,7 @@ gem 'graphql'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+gem 'graphiql-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -47,7 +48,6 @@ group :development, :test do
   gem 'faker'
   gem 'database_cleaner-active_record'
   gem 'shoulda-matchers'
-  gem 'graphiql-rails'
 end
 
 group :development do
