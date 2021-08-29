@@ -1,0 +1,44 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@0.1.2
+jobs:
+  test:
+    working_directory: ~/CodeHerdAPI
+    docker:
+      - image: cimg/ruby:2.7.2
+        environment:
+          PG_HOST: localhost
+          PG_USER: circleci
+      - image: postgres:13.3
+        environment:
+          POSTGRES_USER: circleci
+          POSTGRES_DB: codeherd-be_test
+          POSTGRES_HOST_AUTH_METHOD: trust
+          RAILS_ENV: test
+          RACK_ENV: test
+    steps:
+      - checkout
+      - restore_cache:
+          keys: rails-demo-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: Install dependencies
+          command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs 4 --retry 3
+      - save_cache:
+          key: rails-demo-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://127.0.0.1:5432 -timeout 1m
+      - run:
+          name: Run Tests
+          command: |
+            bundle exec rake db:migrate
+            bundle exec rspec spec
+          environment:
+              DATABASE_URL: "postgres://circleci@localhost:5432/codeherd-be_test"
+
+workflows:
+  heroku_deploy:
+    jobs:
+      - test
