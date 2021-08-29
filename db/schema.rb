@@ -1,3 +1,4 @@
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 
 ActiveRecord::Schema.define(version: 2021_08_28_224242) do
   # These are extensions that must be enabled in order to support this database
@@ -44,19 +44,11 @@ ActiveRecord::Schema.define(version: 2021_08_28_224242) do
     t.index ["project_id"], name: "index_resources_on_project_id"
   end
 
-=======
-ActiveRecord::Schema.define(version: 2021_08_28_214518) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
->>>>>>> fb05560... graphql setup with types to match rails schema
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
     t.string "slack_handle"
     t.string "github_handle"
-<<<<<<< HEAD
     t.string "working_styles", default: [], array: true
     t.string "cohort"
     t.string "pronouns"
@@ -69,12 +61,4 @@ ActiveRecord::Schema.define(version: 2021_08_28_214518) do
   add_foreign_key "collaborators", "users"
   add_foreign_key "projects", "users", column: "owner_id"
   add_foreign_key "resources", "projects"
-=======
-    t.string "working_styles"
-    t.string "cohort"
-    t.string "pronouns"
-    t.string "github_access_token"
-  end
-
->>>>>>> fb05560... graphql setup with types to match rails schema
 end
