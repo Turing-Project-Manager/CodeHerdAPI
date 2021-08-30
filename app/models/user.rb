@@ -1,4 +1,8 @@
 class User < ApplicationRecord
+  validates :email, presence: true, uniqueness: true
+  validates :name, presence: true
+  validates :github_handle, presence: true, uniqueness: true
+  validates :github_access_token, presence: true, uniqueness: true
 
   def self.find_or_create_from_auth_hash(hash)
     github_handle = hash[:info][:nickname]
