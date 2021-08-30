@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   end
 
   post "/graphql", to: "graphql#execute"
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'sessions/new', as: :sign_in
+  
+  get '/auth/:provider/callback', to: 'sessions#create'
 end
