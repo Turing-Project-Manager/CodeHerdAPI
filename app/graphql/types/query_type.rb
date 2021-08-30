@@ -13,5 +13,14 @@ module Types
     def test_field
       "Hello World!"
     end
+
+    field :project, Types::ProjectType, null: false do
+      description "the name of the project"
+      argument :id, ID, required: true
+    end
+
+    def project(id:)
+      Project.find(id)
+    end
   end
 end
