@@ -53,11 +53,13 @@ GEM
       tzinfo (~> 1.1)
     arel (9.0.0)
     ast (2.4.2)
+    awesome_print (1.9.2)
     bcrypt (3.1.16)
     bootsnap (1.8.1)
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
+    coderay (1.1.3)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
     database_cleaner-active_record (2.0.1)
@@ -154,6 +156,9 @@ GEM
       ast (~> 2.4.1)
     pg (1.2.3)
     prettier (1.6.1)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     puma (4.3.8)
       nio4r (~> 2.0)
     racc (1.5.2)
@@ -255,6 +260,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  awesome_print
   bootsnap (>= 1.1.0)
   byebug
   database_cleaner-active_record
@@ -271,6 +277,7 @@ DEPENDENCIES
   omniauth-github!
   pg (>= 0.18, < 2.0)
   prettier
+  pry
   puma (~> 4.3.8)
   rack-cors
   rails (~> 5.2.6)
