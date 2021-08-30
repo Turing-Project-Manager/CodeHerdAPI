@@ -48,6 +48,8 @@ group :development, :test do
   gem 'faker'
   gem 'database_cleaner-active_record'
   gem 'shoulda-matchers'
+  gem 'pry'
+  gem 'awesome_print'
 end
 
 group :development do
