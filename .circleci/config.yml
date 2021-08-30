@@ -19,7 +19,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys: rails-demo-{{ checksum "Gemfile.lock" }}
+          key: rails-demo-{{ checksum "Gemfile.lock" }}
       - run:
           name: Install dependencies
           command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs 4 --retry 3
