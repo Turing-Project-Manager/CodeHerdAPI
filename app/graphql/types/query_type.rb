@@ -29,5 +29,23 @@ module Types
     def user(id:)
       User.find(id)
     end
+
+    field :users_projects, Types::ProjectType, null: false do
+      description "all of a user's projects"
+      argument :user_id, ID, required: true
+    end
+
+    def users_projects(user_id:)
+      Project.where(owner_id: user_id)
+    end
+
+    field :project, Types::ProjectType, null: false do
+      description "the name of the project"
+      argument :id, ID, required: true
+    end
+
+    def project(id:)
+      Project.find(id)
+    end
   end
 end
