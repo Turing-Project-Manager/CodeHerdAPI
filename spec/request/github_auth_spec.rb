@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'GithubAuth', type: :request do
-  before :each do 
+  before :each do
     OmniAuth.config.mock_auth[:github] = Faker::Omniauth.github
   end
 

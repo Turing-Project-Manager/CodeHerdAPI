@@ -4,7 +4,7 @@ class CreateProjects < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :summary
       t.string :mod_number
-      t.references :owner, foreign_key: {to_table: :users}
+      t.references :owner, foreign_key: { to_table: :users }
 
       t.timestamps
     end

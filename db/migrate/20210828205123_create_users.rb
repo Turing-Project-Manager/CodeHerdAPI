@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :email
       t.string :slack_handle
       t.string :github_handle
-      t.string :working_styles, :array => true, :default => []
+      t.string :working_styles, array: true, default: []
       t.string :cohort
       t.string :pronouns
       t.string :github_access_token
