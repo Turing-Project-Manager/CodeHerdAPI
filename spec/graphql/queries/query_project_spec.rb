@@ -10,13 +10,12 @@ RSpec.describe 'query project', type: :request do
 
       post '/graphql', params: { query: "{ usersProjects(userId: #{user.id}) {name, summary, modNumber} }" }
       parsed = JSON.parse(response.body, symbolize_names: true)
-      # require "pry";binding.pry
+      
       expect(parsed[:data][:usersProjects]).to be_an(Array)
-      # expect(parsed[:data][:projects]).to eq([])
-      # expect(parsed[:data][:usersProjects][0]).to eq(["#{project_1.name}", "#{project_1.summary}", "#{project_1.mod_number}"])
-      expect(parsed[:data][:usersProjects][0][:name]).to eq(project_1.name)
-      expect(parsed[:data][:usersProjects][0][:summary]).to eq(project_1.summary)
-      expect(parsed[:data][:usersProjects][0][:modNumber]).to eq(project_1.mod_number)
+      expect(parsed[:data][:usersProjects].count).to eq(3)
+      expect(parsed[:data][:usersProjects][0]).to include(name: project_1.name, summary: project_1.summary, modNumber: project_1.mod_number)
+      expect(parsed[:data][:usersProjects][1]).to include(name: project_2.name, summary: project_2.summary, modNumber: project_2.mod_number)
+      expect(parsed[:data][:usersProjects][2]).to include(name: project_3.name, summary: project_3.summary, modNumber: project_3.mod_number)
     end
 
     it 'returns project name information' do
