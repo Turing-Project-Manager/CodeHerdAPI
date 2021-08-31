@@ -10,7 +10,6 @@ class User < ApplicationRecord
     email = info[:email]
     name = info[:name]
     github_access_token = hash[:credentials][:token]
-
     # image = info[:image]
     # uid = hash[:uid]
     user = User.find_or_create_by(email: email)

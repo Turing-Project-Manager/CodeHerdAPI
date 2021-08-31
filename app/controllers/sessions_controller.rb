@@ -13,7 +13,6 @@ class SessionsController < ApplicationController
     user = User.find_or_create_from_auth_hash(auth_hash)
     str = [user.id.to_s, user.name, user.email].to_s
     encoded_token = Base64.encode64(str)
-
     # TODO: redirect to frontend
     redirect_to "/?token=#{encoded_token}"
   end
