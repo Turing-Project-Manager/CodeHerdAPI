@@ -10,10 +10,10 @@ class User < ApplicationRecord
     email = info[:email]
     name = info[:name]
     github_access_token = hash[:credentials][:token]
-    # image = info[:image]
+    image = info[:image]
     # uid = hash[:uid]
     user = User.find_or_create_by(email: email)
-    user.update(github_handle: github_handle, name: name, github_access_token: github_access_token)
+    user.update(github_handle: github_handle, name: name, github_access_token: github_access_token, image: image)
     user
   end
 end
