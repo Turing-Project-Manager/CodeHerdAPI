@@ -30,7 +30,7 @@ module Types
       User.find(id)
     end
 
-    field :users_projects, Types::ProjectType, null: false do
+    field :users_projects, [Types::ProjectType], null: false do
       description "all of a user's projects"
       argument :user_id, ID, required: true
     end

@@ -11,4 +11,9 @@ RSpec.describe Project, type: :model do
     it { should validate_presence_of(:mod_number) }
     it { should validate_presence_of(:summary) }
   end
+
+  it 'should have a valid factory' do
+    user = create(:user)
+    expect(build(:project, owner: user)).to be_valid
+  end
 end

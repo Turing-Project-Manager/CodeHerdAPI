@@ -35,7 +35,20 @@ type Mutation {
   ): EditUserPayload
 }
 
+type Project {
+  id: ID!
+  modNumber: String
+  name: String
+  owner: User
+  summary: String
+}
+
 type Query {
+  """
+  the name of the project
+  """
+  project(id: ID!): Project!
+
   """
   return a user
   """
@@ -45,12 +58,16 @@ type Query {
   return all users
   """
   users: [User!]!
+
+  """
+  all of a user's projects
+  """
+  usersProjects(userId: ID!): [Project!]!
 }
 
 type User {
   cohort: String
   email: String
-  githubAccessToken: String!
   githubHandle: String
   id: ID!
   name: String
