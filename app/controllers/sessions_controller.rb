@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
       email: user.email,
     }.to_json
     # TODO: redirect to frontend
-    redirect_to "http://localhost:3000/userLanding?info=#{json}"
+    redirect_to "http://localhost:3000/#{user.github_handle}?info=#{json}"
   end
 
   protected
