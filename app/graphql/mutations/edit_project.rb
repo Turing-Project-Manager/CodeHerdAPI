@@ -4,6 +4,7 @@ module Mutations
     argument :project_id, ID, required: true
     argument :summary, String, required: false
     argument :name, String, required: false
+    argument :mod_number, String, required: false
 
     field :project, Types::ProjectType, null: true
     field :errors, [String], null: false
