@@ -11,10 +11,13 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_or_create_from_auth_hash(auth_hash)
-    str = [user.id.to_s, user.name, user.email].to_s
-    encoded_token = Base64.encode64(str)
+    json = {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+    }.to_json
     # TODO: redirect to frontend
-    redirect_to "/?token=#{encoded_token}"
+    redirect_to "#{ENV['FRONTEND_URL']}/userLanding?info=#{json}"
   end
 
   protected
