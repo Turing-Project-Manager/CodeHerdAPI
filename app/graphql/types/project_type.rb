@@ -5,5 +5,7 @@ module Types
     field :summary, String, null: true
     field :mod_number, String, null: true
     field :owner, Types::UserType, null: true
+    field :collaborators, [Types::UserType], null: true
+    field :resources, [Types::ResourceType], null: true
   end
 end

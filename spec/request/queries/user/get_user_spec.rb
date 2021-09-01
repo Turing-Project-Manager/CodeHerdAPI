@@ -5,10 +5,11 @@ RSpec.describe 'Get A User', type: :request do
     @user = create(:user)
   end
 
-  def query
+  def query(user_id: nil)
+    user_id ||= @user.id
     <<~GQL
     {
-      user(id: #{@user.id}){
+      user(id: #{user_id}){
         id,
         email,
         githubHandle
@@ -23,4 +24,10 @@ RSpec.describe 'Get A User', type: :request do
     expect(response.body).to include(@user.id.to_s)
     expect(response.body).to include(@user.github_handle)
   end
+
+  it 'should return error if user is not found' do
+    post '/graphql', params: {query: query(user_id: 0)}
+    expect(response.body).to include("Couldn't find User with 'id'=0")
+  end
+  
 end

@@ -49,11 +49,7 @@ class GraphqlController < ApplicationController
   end
 
   def check_header
-    x = false
-    if request.headers['X-CodeHerd-Auth'] == ENV['GRAPHQL_KEY']
-      x = true
-    end
-    x
+    request.headers['X-CodeHerd-Auth'] == ENV['GRAPHQL_KEY']
   end
 
 

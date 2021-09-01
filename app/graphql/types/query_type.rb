@@ -28,6 +28,8 @@ module Types
 
     def user(id:)
       User.find(id)
+    rescue ActiveRecord::RecordNotFound => error
+      raise GraphQL::ExecutionError, error.message
     end
 
     field :users_projects, [Types::ProjectType], null: false do
