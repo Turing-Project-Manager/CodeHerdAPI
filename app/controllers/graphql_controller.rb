@@ -3,17 +3,24 @@ class GraphqlController < ApplicationController
   # This allows for outside API access while preventing CSRF attacks,
   # but you'll have to authenticate your user separately
   # protect_from_forgery with: :null_session
+  # before_action :check_header
 
   def execute
     variables = prepare_variables(params[:variables])
     query = params[:query]
     operation_name = params[:operationName]
+    # get current user using id being sent
     context = {
       # Query context goes here, for example:
       # current_user: current_user,
     }
-    result = CodeherdBeSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
-    render json: result
+    # this is here to make sure only we can use the API will implement this later
+    # if check_header
+      result = CodeherdBeSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
+      render json: result
+    # else
+    #   render json: { errors: 'Invalid key'}, status: 401
+    # end
   rescue StandardError => e
     raise e unless Rails.env.development?
     handle_error_in_development(e)
@@ -40,6 +47,15 @@ class GraphqlController < ApplicationController
       raise ArgumentError, "Unexpected parameter: #{variables_param}"
     end
   end
+
+  def check_header
+    x = false
+    if request.headers['X-CodeHerd-Auth'] == ENV['GRAPHQL_KEY']
+      x = true
+    end
+    x
+  end
+
 
   def handle_error_in_development(e)
     logger.error e.message
