@@ -16,11 +16,9 @@ module Mutations
         owner: User.find(info[:owner_id])
         )
         return_info(Project.last, errors: [])
-      else
-        return_info(nil, errors: ["Some or all of this info was invalid. Sorry this is a bad error message."])
       end
     end
-    
+
     private
     def return_info(project, errors: [])
       {
