@@ -1,24 +1,27 @@
-# README
+# CodeHerd API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This API provides data storage and retrieval for the CodeHerd frontend. This project is a project management solution for Turing students allowing them to keep all necessary project materials and links in one place to combat the split nature of typical project management.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+- clone repo
+- bundle install
 
-* System dependencies
+## Testing
 
-* Configuration
+- rspec
 
-* Database creation
+## Seeing the graphql queries and mutations
 
-* Database initialization
+https://codeherdapi.herokuapi.com
 
-* How to run the test suite
+## Generate Graphql docs
 
-* Services (job queues, cache servers, search engines, etc.)
+make sure you download the npm package graphdocs npm install -g @2fd/graphdoc
 
-* Deployment instructions
+you'll need to start a local server or ping the deployed. This will put the files in the public folder for rails to serve
 
-* ...
+```
+graphdoc -e http://localhost:3000/graphql -o ./public
+```
+
