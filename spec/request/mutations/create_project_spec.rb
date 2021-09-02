@@ -6,18 +6,20 @@ RSpec.describe 'Create Project', type: :request do
       <<~GQL
       mutation {
         createProject(input:{
-          owner: #{user_id}
-          modNumber: #{mod_number},
-          summary: #{summary},
-          name: #{name}
+          ownerId: #{user_id}
+          modNumber: "#{mod_number}",
+          summary: "#{summary}",
+          name: "#{name}"
         }
         ){
           project{
             id,
-            owner,
             modNumber,
             summary,
-            name
+            name,
+            owner {
+              id
+            }
           }
           errors
         }
@@ -29,14 +31,14 @@ RSpec.describe 'Create Project', type: :request do
     mod = "3"
     summary = "Best project ever, don't look at the bugs."
     name = "Hire me."
+
     post '/graphql', params: { query:  query(user_1.id, mod, summary, name) }
 
-    parsed = JSON.parse(response.body, symbolize: true)
+    parsed = JSON.parse(response.body, symbolize_names: true)
 
-    expect(parsed[:data][:createProject][:project][:owner]).to be(user_1)
+    expect(parsed[:data][:createProject][:project][:owner][:id].to_i).to be(user_1.id)
     expect(parsed[:data][:createProject][:project][:modNumber]).to eq(mod)
     expect(parsed[:data][:createProject][:project][:summary]).to eq(summary)
     expect(parsed[:data][:createProject][:project][:name]).to eq(name)
-
   end
 end
