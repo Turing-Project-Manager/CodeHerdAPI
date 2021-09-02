@@ -2,6 +2,7 @@ module Types
   class MutationType < Types::BaseObject
     field :edit_user, mutation: Mutations::EditUser
     field :edit_project, mutation: Mutations::EditProject
+    field :create_project, mutation: Mutations::CreateProject
 
     # TODO: remove me
     # field :test_field, String, null: false,
