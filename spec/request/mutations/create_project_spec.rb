@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Create Project', type: :request do
-
   it 'create a new project' do
     def query(user_id, mod_number, summary, name)
       <<~GQL
@@ -27,7 +26,7 @@ RSpec.describe 'Create Project', type: :request do
       }
       GQL
     end
-    
+
     user_1 = User.create!(name: "Turing Kiddo", email: "sigh@turing.com", github_handle: "le_sigh", github_access_token: "jkshfkjshaqetyy4sesh8gzs9y")
     mod = "3"
     summary = "Best project ever, don't look at the bugs."
