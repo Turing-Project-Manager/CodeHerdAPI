@@ -13,7 +13,7 @@ This API provides data storage and retrieval for the CodeHerd frontend. This pro
 
 ## Seeing the graphql queries and mutations
 
-https://codeherdapi.herokuapi.com
+https://codeherdapi.herokuapp.com/
 
 ## Generate Graphql docs
 
