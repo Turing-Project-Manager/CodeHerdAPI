@@ -3,6 +3,7 @@ module Types
     field :edit_user, mutation: Mutations::EditUser
     field :edit_project, mutation: Mutations::EditProject
     field :create_project, mutation: Mutations::CreateProject
+    field :create_collaboration, mutation: Mutations::CreateCollaboration
 
     # TODO: remove me
     # field :test_field, String, null: false,
