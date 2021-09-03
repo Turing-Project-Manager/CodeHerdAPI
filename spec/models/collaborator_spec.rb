@@ -8,8 +8,8 @@ RSpec.describe Collaborator, type: :model do
 
   describe 'validations' do
     it {should validate_presence_of(:user_id)}
-    # it {should validate_uniqueness_of(:user_id)}
     it {should validate_presence_of(:project_id)}
-    # it {should validate_uniqueness_of(:project_id)}
+    # it {should validate_uniqueness_of(:user_id).scoped_to(:project_id)}
+    # it {should validate_uniqueness_of(:project_id).scoped_to(:user_id)}
   end
 end

@@ -8,6 +8,7 @@ module Types
     field :working_styles, [String], null: true
     field :cohort, String, null: true
     field :pronouns, String, null: true
+    field :image, String, null: true
     # field :github_access_token, String, null: false
   end
 end

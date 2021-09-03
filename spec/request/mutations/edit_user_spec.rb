@@ -39,4 +39,27 @@ RSpec.describe 'Get A User', type: :request do
     json = JSON.parse(response.body)
     expect(json['data']['editUser']['errors']).to include("Couldn't find User with 'id'=0")
   end
+
+  xit 'returns error if user cannot be updated' do
+    query_str = <<~GQL
+      mutation {
+        editUser(input:{
+          userId: #{@user.id},
+          slackHandle: "",
+          cohort: ""
+        }
+        ){
+          user{
+            id
+            slackHandle
+            cohort
+          }
+          errors
+        }
+      }
+    GQL
+    post '/graphql', params: {query: query_str}
+    json = JSON.parse(response.body)
+    expect(json['data']['editUser']['errors']).to include("Slack handle can't be blank")
+  end
 end
