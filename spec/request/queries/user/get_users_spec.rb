@@ -2,6 +2,10 @@ require 'rails_helper'
 
 RSpec.describe 'Get Users', type: :request do
   before(:each) do
+    Resource.destroy_all
+    Collaborator.destroy_all
+    Project.destroy_all
+    User.destroy_all
     @users = create_list(:user, 5)
   end
 
