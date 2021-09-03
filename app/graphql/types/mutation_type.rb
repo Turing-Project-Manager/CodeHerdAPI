@@ -9,6 +9,7 @@ module Types
     field :edit_project, mutation: Mutations::EditProject
     field :edit_resource, mutation: Mutations::EditResource
     field :edit_user, mutation: Mutations::EditUser
+    field :delete_collaborator, mutation: Mutations::DeleteCollaborator
     # TODO: remove me
     # field :test_field, String, null: false,
     #   description: "An example field added by the generator"
