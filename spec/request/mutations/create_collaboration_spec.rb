@@ -54,6 +54,19 @@ RSpec.describe 'Create Collaboration', type: :request do
     expect(parsed[:data][:createCollaboration][:errors][0]).to eq("Validation failed: User must exist")
   end
 
+  it 'cannot create a collaborator if collaboration already exists' do
+    user_1 = create(:user)
+    user_2 = create(:user)
+    project_1 = create(:project)
+    Collaborator.create(user: user_1, project: project_1)
+    count = Collaborator.count
+    post '/graphql', params: { query: query(user_1.id, "#{user_2.email}", project_1.id) }
+    post '/graphql', params: { query: query(user_1.id, "#{user_2.email}", project_1.id) }
+    errors = JSON.parse(response.body, symbolize_names: true)[:data][:createCollaboration][:errors]
+    expect(Collaborator.count).to eq(count + 1)
+    expect(errors).to include("Validation failed: User has already been taken, Project has already been taken")
+  end
+
   it 'cannot add a collaborator onto a project if the project id is not valid'  do
     def query(user_id, email)
       <<~GQL

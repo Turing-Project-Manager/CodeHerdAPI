@@ -37,7 +37,7 @@ RSpec.describe 'Edit Resource', type: :request do
     it 'returns error if user is not collaborator' do
       post '/graphql', params: { query: query(0,'link', 'The Content', 'The Name') }
       parsed = JSON.parse(response.body, symbolize_names: true)
-      expect(parsed[:data][:editResource][:errors][0]).to eq('Cant create resource. You are not a collaborator or project doesnt exist')
+      expect(parsed[:data][:editResource][:errors][0]).to eq('Cant edit resource. You are not a collaborator or project doesnt exist')
     end
 
     it 'edit' do

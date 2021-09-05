@@ -17,13 +17,13 @@ module Types
     field :users, [Types::UserType], null: false,
       description: "return all users"
 
-    field :user, Types::UserType, null: false do
-      description "return a user"
-      argument :id, ID, required: true
-    end
-
     def users
       User.all
+    end
+
+    field :user, Types::UserType, null: false do
+      description "return a user"
+      argument :id, ID, required: true, description: "ID of the user you want to find"
     end
 
     def user(id:)
@@ -34,7 +34,7 @@ module Types
 
     field :users_projects, [Types::ProjectType], null: false do
       description "all of a user's projects"
-      argument :user_id, ID, required: true
+      argument :user_id, ID, required: true, description: "ID of the user you want to find projects for"
     end
 
     def users_projects(user_id:)
@@ -42,8 +42,8 @@ module Types
     end
 
     field :project, Types::ProjectType, null: false do
-      description "the name of the project"
-      argument :id, ID, required: true
+      description "Get project by ID"
+      argument :id, ID, required: true, description: "ID of the project you want to find"
     end
 
     def project(id:)

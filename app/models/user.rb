@@ -3,6 +3,9 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :github_handle, presence: true, uniqueness: true
   validates :github_access_token, presence: true, uniqueness: true
+  # validates :slack_handle, presence: true
+  # validates :cohort, presence: true
+  has_many :projects, dependent: :destroy, foreign_key: :owner_id
 
   def self.find_or_create_from_auth_hash(hash)
     info = hash[:info]

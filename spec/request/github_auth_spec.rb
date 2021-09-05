@@ -7,8 +7,7 @@ RSpec.describe 'GithubAuth', type: :request do
 
   it 'should create a user' do
     count = User.count
-    get '/sessions/new'
-    follow_redirect!
+    get '/auth/github'
     follow_redirect!
     expect(User.count).to eq(count + 1)
   end

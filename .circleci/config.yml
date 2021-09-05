@@ -19,12 +19,12 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: rails-demo-{{ checksum "Gemfile.lock" }}
+          key: codeherd-{{ checksum "Gemfile.lock" }}
       - run:
           name: Install dependencies
           command: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs 4 --retry 3
       - save_cache:
-          key: rails-demo-{{ checksum "Gemfile.lock" }}
+          key: codeherd-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run:
@@ -39,6 +39,6 @@ jobs:
               DATABASE_URL: "postgres://circleci@localhost:5432/codeherd-be_test"
 
 workflows:
-  heroku_deploy:
+  run_test:
     jobs:
       - test
