@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       image: user.image
     }.to_json
     # TODO: redirect to frontend
-    redirect_to "https://codeherd.herokuapp.com/#{user.github_handle}?info=#{json}"
+    redirect_to "http://localhost:3000/#{user.github_handle}?info=#{json}"
   end
 
   protected
