@@ -15,8 +15,10 @@ module Mutations
         mod_number: info[:mod_number],
         owner: User.find(info[:owner_id])
         )
+        Collaborator.create!(user_id: info[:owner_id], project_id: Project.last.id)
         return_info(Project.last, errors: [])
       end
+      # send back error if project not created
     end
 
     private
