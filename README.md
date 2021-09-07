@@ -1,6 +1,6 @@
 # CodeHerd API
 
-This API provides data storage and retrieval for the CodeHerd frontend. This project is a project management solution for Turing students allowing them to keep all necessary project materials and links in one place to combat the split nature of typical project management.
+This API provides data storage and retrieval for the CodeHerd frontend. This is a project management solution for Turing students allowing them to keep all necessary project materials and links in one place to combat the split nature of typical project management.
 
 ## Setup
 
