@@ -16,11 +16,11 @@ module Mutations
           project_repo.destroy
           { errors: [], project: Project.find(project_id) }
         else
-          { errors: ['could not find project repo'], project: nil }
+          { errors: ['could not find project repo'], project: Project.find(project_id) }
         end
           
       else
-        { errors: ['Project does not exist or the user is not a collaborator'], project: nil }
+        { errors: ['Project does not exist or the user is not a collaborator'], project: Project.find(project_id) }
       end
     end
   end
