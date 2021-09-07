@@ -20,7 +20,7 @@ module Mutations
         end
           
       else
-        { errors: ['Project does not exist or the user is not a collaborator'], project: Project.find(project_id) }
+        { errors: ['Project does not exist or the user is not a collaborator'], project: nil }
       end
     end
   end
