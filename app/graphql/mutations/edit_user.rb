@@ -4,7 +4,7 @@ module Mutations
     argument :user_id, ID, required: true
     argument :name, String, required: false
     argument :slack_handle, String, required: false
-    argument :working_styles, [String], required: false
+    argument :working_styles, String, required: false
     argument :cohort, String, required: false
     argument :pronouns, String, required: false
 
@@ -15,6 +15,7 @@ module Mutations
       user_id = info.delete(:user_id)
       user = User.find(user_id)
       if user.update(info)
+        user.working_styles = [info[:working_styles]]
         return_info(user, errors: [])
       else
         return_info(nil, errors: user.errors.full_messages)

@@ -14,7 +14,7 @@ module Mutations
 
     def resolve(user_id:, project_id:, resource_id:)
       if Collaborator.where(user_id: user_id, project_id: project_id).empty?
-        return {errors: ['Cant delete resource. You are not a collaborator or project doesnt exist'], project: Project.find(project_id)}
+        return {errors: ['Cant delete resource. You are not a collaborator or project doesnt exist'], project: nil}
       end
       resource = Resource.find(resource_id).destroy
       {errors: [], project: Project.find(project_id)}
