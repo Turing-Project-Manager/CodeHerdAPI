@@ -251,7 +251,7 @@ input EditUserInput {
   pronouns: String
   slackHandle: String
   userId: ID!
-  workingStyles: [String!]
+  workingStyles: String
 }
 
 """
