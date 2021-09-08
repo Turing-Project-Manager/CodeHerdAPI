@@ -18,7 +18,7 @@ module Mutations
         Collaborator.create!(user_id: info[:owner_id], project_id: Project.last.id)
         return_info(Project.last, errors: [])
       end
-    resuce ActiveRecord::RecordInvalid => error
+    rescue ActiveRecord::RecordInvalid => error
       return_info(nil, errors: error)
       # send back error if project not created
     end
