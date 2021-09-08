@@ -5,7 +5,7 @@ module Types
     field :email, String, null: true
     field :slack_handle, String, null: true
     field :github_handle, String, null: true
-    field :working_styles, [String], null: true
+    field :working_styles, String, null: true
     field :cohort, String, null: true
     field :pronouns, String, null: true
     field :image, String, null: true
