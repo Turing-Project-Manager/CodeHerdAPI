@@ -92,7 +92,17 @@ graphdoc -e http://localhost:3000/graphql -o ./public
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#backend">Back-End</a></li>
+      </ul>
+      <ul>
+        <li><a href="#frontend">Front-End</a></li>
+      </ul>
+      <ul>
+        <li><a href="#project-links">Project Links</a></li>
+      </ul>
+    </li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
