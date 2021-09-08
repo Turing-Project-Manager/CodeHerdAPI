@@ -197,17 +197,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 #### Back-End Team:
 
-Taija Warbelow - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub]() - taija.warbelow@gmail.com
+Taija Warbelow - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub](https://github.com/twarbelow) - taija.warbelow@gmail.com
 
-Zach Green - [Linkedin](https://www.linkedin.com/in/zachjamesgreen/) - [GitHub]() - zachjamesgreen@gmail.com
+Zach Green - [Linkedin](https://www.linkedin.com/in/zachjamesgreen/) - [GitHub](https://github.com/zachjamesgreen) - zachjamesgreen@gmail.com
 
-Leigh Cepriano Pulzone - [Linkedin](https://www.linkedin.com/in/lcpulzone/) - [GitHub]() - lcpulzone@gmail.com
+Leigh Cepriano Pulzone - [Linkedin](https://www.linkedin.com/in/lcpulzone/) - [GitHub](https://github.com/lcpulzone) - lcpulzone@gmail.com
 
 #### Front-End Team:
 
-Shawn McMahon - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub]() - taija.warbelow@gmail.com
+Shawn McMahon - [Linkedin](https://www.linkedin.com/in/shawnpmcmahon/) - [GitHub](https://github.com/shawnmcmahon) - shawnmcmahon17@gmail.com
 
-Ashton Huxtable - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub]() - taija.warbelow@gmail.com
+Ashton Huxtable - [Linkedin](https://www.linkedin.com/in/ashtonhuxtable/) - [GitHub](https://github.com/ashton-huxtable) - aehuxtable@gmail.com
 
 #### Project Links:
 
