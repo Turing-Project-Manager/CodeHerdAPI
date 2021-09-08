@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_31_190502) do
+ActiveRecord::Schema.define(version: 2021_09_08_202310) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,13 +58,13 @@ ActiveRecord::Schema.define(version: 2021_08_31_190502) do
     t.string "email"
     t.string "slack_handle"
     t.string "github_handle"
-    t.string "working_styles", default: [], array: true
     t.string "cohort"
     t.string "pronouns"
     t.string "github_access_token"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "image"
+    t.string "working_styles"
   end
 
   add_foreign_key "collaborators", "projects"

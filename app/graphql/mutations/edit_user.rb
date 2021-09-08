@@ -15,7 +15,7 @@ module Mutations
       user_id = info.delete(:user_id)
       user = User.find(user_id)
       if user.update(info)
-        user.update(working_styles: [info[:working_styles]])
+        # user.update(working_styles: [info[:working_styles]])
         return_info(user, errors: [])
       else
         return_info(nil, errors: user.errors.full_messages)
