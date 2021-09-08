@@ -199,9 +199,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Taija Warbelow - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub]() - taija.warbelow@gmail.com
 
-Zach Green - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub]() - taija.warbelow@gmail.com
+Zach Green - [Linkedin](https://www.linkedin.com/in/zachjamesgreen/) - [GitHub]() - zachjamesgreen@gmail.com
 
-Leigh Cepriano Pulzone - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub]() - taija.warbelow@gmail.com
+Leigh Cepriano Pulzone - [Linkedin](https://www.linkedin.com/in/lcpulzone/) - [GitHub]() - lcpulzone@gmail.com
 
 #### Front-End Team:
 
