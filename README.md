@@ -9,8 +9,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="codeherd.png" alt="Logo" width="120" height="80">
+  <a href="https://codeherd.herokuapp.com/">
+    <img src="https://github.com/Turing-Project-Manager/CodeHerd/blob/main/src/assets/elephant.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">CodeHerdAPI</h3>
