@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
@@ -74,8 +74,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Welcome to CodeHerdAPI the backend application for CodeHerd, a One-App-To-Rule-Them-All approach for Turing students to organize their projects.   
 
 With CodeHerd, searching Slack high and low for that one link to that great resource a peer shared or remembering which of the 50 open tabs is the project requirements will be a thing of the past.  CodeHerd gives Turing students one central location for all things related to a project.  
@@ -86,24 +84,9 @@ The best thing?  The student will have their body of work in one place to find a
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Ruby on Rails](https://rubyonrails.org/)
 * [GraphQL Ruby](https://graphql-ruby.org/)
 * [Omniauth](https://github.com/omniauth/omniauth)
-
-#### Seeing the graphql queries and mutations
-
-https://codeherdapi.herokuapp.com/
-
-#### Generate Graphql docs
-
-make sure you download the npm package graphdocs npm install -g @2fd/graphdoc
-
-you'll need to start a local server or ping the deployed. This will put the files in the public folder for rails to serve
-
-```
-graphdoc -e http://localhost:3000/graphql -o ./public
-```
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -112,7 +95,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+
 * npm
   ```sh
   npm install npm@latest -g
@@ -139,11 +122,17 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+_For more examples, please refer to: [GraphQL Queries & Mutations](https://codeherdapi.herokuapp.com/)_
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<!-- #### Generate Graphql docs
 
+make sure you download the npm package graphdocs npm install -g @2fd/graphdoc
 
+you'll need to start a local server or ping the deployed. This will put the files in the public folder for rails to serve
+
+```
+graphdoc -e http://localhost:3000/graphql -o ./public
+``` -->
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -155,7 +144,7 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Do you have an idea to take CodeHerdAPI to the next level?  Rad!!  We want to see!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -222,16 +211,13 @@ Organization Link: [Turing Project Manager](https://github.com/Turing-Project-Ma
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[contributors-shield]: https://img.shields.io/github/contributors/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge
+[contributors-url]: https://github.com/Turing-Project-Manager/CodeHerdAPI/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge
+[forks-url]: https://github.com/Turing-Project-Manager/CodeHerdAPI/network/members
+[stars-shield]: https://img.shields.io/github/stars/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge
+[stars-url]: https://github.com/Turing-Project-Manager/CodeHerdAPI/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge
+[issues-url]: https://github.com/Turing-Project-Manager/CodeHerdAPI/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
