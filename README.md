@@ -5,7 +5,11 @@
 [![MIT License][license-shield]][license-url]
 
 <div align="center">
-  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/graphs/contributors><img src=https://img.shields.io/github/contributors/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge /></a>
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/graphs/contributors><img src="https://img.shields.io/github/contributors/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/network/members><img src="https://img.shields.io/github/forks/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/stargazers><img src="https://img.shields.io/github/stars/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/issues><img src="https://img.shields.io/github/issues/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt><img src="https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge" /></a>
 </div>
 
 
