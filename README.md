@@ -4,8 +4,8 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-<div>
-  <a href=(contributors-url)><img src=(contributors-shield) /></a>
+<div align="center">
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/graphs/contributors><img src=https://img.shields.io/github/contributors/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge /></a>
 </div>
 
 
