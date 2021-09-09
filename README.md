@@ -74,11 +74,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Welcome to CodeHerdAPI the backend application for CodeHerd, a One-App-To-Rule-Them-All approach for Turing students to organize their projects.   
+Welcome to CodeHerdAPI! This is the backend application for CodeHerd, a One-App-To-Rule-Them-All approach for Turing students to organize their projects.   
 
-With CodeHerd, searching Slack high and low for that one link to that great resource a peer shared or remembering which of the 50 open tabs is the project requirements will be a thing of the past.  CodeHerd gives Turing students one central location for all things related to a project.  
+With CodeHerd, searching Slack high and low for that one link to that great resource a peer shared or remembering which of the 50 open tabs is the project requirements will be a thing of the past.  CodeHerd gives Turing students one central location for all things project related.  
 
-To start, a student will sign into CodeHerd using GitHub authorization, from there they can create a project and begin to gather and store all the information they could ever want.  With their GitHub account already accessible; it's as easy as pie to link a repository to the project they've created.  The student can even hand over the reigns, so to speak, by adding collaborators to their project.  Once added, a collaborator can contribute to the project by adding links to helpful resources and any necessary documentation; they'll also have access to DTR templates, pull request templates, and much more.  
+To start, a student will sign into CodeHerd using GitHub authorization. From there they can create a project and begin to gather and store all the information they could ever want.  With their GitHub account already accessible, it's as easy as pie to link a repository to the project they've created.  The student can even hand over the reigns, so to speak, by adding collaborators to their project.  Once added, a collaborator can contribute to the project by adding links to helpful resources and any necessary documentation; they'll also have access to DTR templates, pull request templates, and much more.  
 
 The best thing?  The student will have their body of work in one place to find a resource that can help on a future project or determine which two or three projects are perfect to show off their radical coding skills on their resume.  We know CodeHerd holds the promise of becoming a robust application to answer the needs of Turing students.  This is just the first iteration after all!  
 
