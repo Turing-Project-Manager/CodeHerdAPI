@@ -4,7 +4,6 @@
   <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/stargazers><img src="https://img.shields.io/github/stars/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
   <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/issues><img src="https://img.shields.io/github/issues/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
   <img src=https://circleci.com/gh/Turing-Project-Manager/CodeHerdAPI.svg?style=svg />
-  !(https://circleci.com/gh/Turing-Project-Manager/CodeHerdAPI.svg?style=svg)
 </div>
 
 <!-- PROJECT LOGO -->
