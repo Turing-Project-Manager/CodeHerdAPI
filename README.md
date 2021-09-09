@@ -4,6 +4,10 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+<div>
+  <a href=(contributors-url)><img src=(contributors-shield) /></a>
+</div>
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -93,7 +97,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* !!-add in links to get github key/secret and cors-!!
+* You'll need to create the Github Key and Secret by creating a Github OAuth app. https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
 
 ### Installation
 
@@ -113,7 +117,6 @@ To get a local copy up and running follow these simple example steps.
    ```rb
    GitHub key as `GITHUB_KEY`
    GitHub secret as `GITHUB_SECRET`
-    You'll need to create these by creating a Github OAuth app. https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
    CORS origin as `CORS_ORIGINS`
     This ENV VAR is to set the allowed origins for CORS
    ```
