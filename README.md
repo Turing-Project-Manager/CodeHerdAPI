@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="codeherd.png" alt="Logo" width="120" height="80">
   </a>
 
   <h3 align="center">CodeHerdAPI</h3>
@@ -17,14 +17,13 @@
     A place to corral all things project related into one central location.  
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Turing-Project-Manager/CodeHerdAPI"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://github.com/Turing-Project-Manager/CodeHerdAPI/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Turing-Project-Manager/CodeHerdAPI/issues">Request Feature</a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </p>
 
@@ -50,16 +49,15 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a>
       <ul>
-        <li><a href="#backend">Back-End</a></li>
-      </ul>
-      <ul>
-        <li><a href="#frontend">Front-End</a></li>
-      </ul>
-      <ul>
         <li><a href="#project-links">Project Links</a></li>
+      </ul>
+      <ul>
+        <li><a href="#backend">Backend</a></li>
+      </ul>
+      <ul>
+        <li><a href="#frontend">Frontend</a></li>
       </ul>
     </li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -170,17 +168,19 @@ Do you have an idea to take CodeHerdAPI to the next level?  Rad!!  We want to se
 
 #### Project Links:
 
+* Organization Link: [Turing Project Manager](https://github.com/Turing-Project-Manager)
+
 * BE Project Link: [CodeHerdAPI](https://github.com/Turing-Project-Manager/CodeHerdAPI)
 
 * FE Project Link: [CodeHerd](https://github.com/Turing-Project-Manager/CodeHerd)
 
-* Organization Link: [Turing Project Manager](https://github.com/Turing-Project-Manager)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [README Template Source](https://github.com/othneildrew/Best-README-Template)
+* [Turing Requirements](https://mod4.turing.edu/projects/capstone/)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
