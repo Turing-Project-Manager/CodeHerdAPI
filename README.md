@@ -1,12 +1,3 @@
-## Setup
-
-- clone repo
-- bundle install
-
-## Testing
-
-- rspec
-
 ## Seeing the graphql queries and mutations
 
 https://codeherdapi.herokuapp.com/
@@ -20,14 +11,6 @@ you'll need to start a local server or ping the deployed. This will put the file
 ```
 graphdoc -e http://localhost:3000/graphql -o ./public
 ```
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
