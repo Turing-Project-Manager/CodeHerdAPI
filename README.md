@@ -206,9 +206,6 @@ Organization Link: [Turing Project Manager](https://github.com/Turing-Project-Ma
 * [Font Awesome](https://fontawesome.com)
 
 
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge
