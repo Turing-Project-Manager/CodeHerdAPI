@@ -1,15 +1,17 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+<div align="center">
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/graphs/contributors><img src="https://img.shields.io/github/contributors/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/network/members><img src="https://img.shields.io/github/forks/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/stargazers><img src="https://img.shields.io/github/stars/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/Turing-Project-Manager/CodeHerdAPI/issues><img src="https://img.shields.io/github/issues/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge" /></a>
+  <a href=https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt><img src="https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge" /></a>
+</div>
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://codeherd.herokuapp.com/">
+    <img src="https://github.com/Turing-Project-Manager/CodeHerd/blob/main/src/assets/elephant.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">CodeHerdAPI</h3>
@@ -18,14 +20,14 @@
     A place to corral all things project related into one central location.  
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://codeherdapi.herokuapp.com/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://codeherd.herokuapp.com/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/Turing-Project-Manager/CodeHerdAPI/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/Turing-Project-Manager/CodeHerdAPI/issues">Request Feature</a>
   </p>
 </p>
 
@@ -93,7 +95,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* !!-add in links to get github key/secret and cors-!!
+* You'll need to create the Github Key and Secret by creating a Github OAuth app. https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
 
 ### Installation
 
@@ -114,6 +116,7 @@ To get a local copy up and running follow these simple example steps.
    GitHub key as `GITHUB_KEY`
    GitHub secret as `GITHUB_SECRET`
    CORS origin as `CORS_ORIGINS`
+    This ENV VAR is to set the allowed origins for CORS
    ```
 5. Run `rails db:{create,migrate}`
 
@@ -136,7 +139,7 @@ graphdoc -e http://localhost:3000/graphql -o ./public
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](issues-url) for a list of proposed features (and known issues).
 
 
 
