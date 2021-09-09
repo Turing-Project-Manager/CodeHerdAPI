@@ -2,7 +2,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
@@ -152,38 +151,30 @@ Do you have an idea to take CodeHerdAPI to the next level?  Rad!!  We want to se
 5. Open a Pull Request
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
 <!-- CONTACT -->
 ## Contact
 
 #### Back-End Team:
 
-Taija Warbelow - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub](https://github.com/twarbelow) - taija.warbelow@gmail.com
+* Taija Warbelow - [Linkedin](https://www.linkedin.com/in/taija-warbelow/) - [GitHub](https://github.com/twarbelow) - taija.warbelow@gmail.com
 
-Zach Green - [Linkedin](https://www.linkedin.com/in/zachjamesgreen/) - [GitHub](https://github.com/zachjamesgreen) - zachjamesgreen@gmail.com
+* Zach Green - [Linkedin](https://www.linkedin.com/in/zachjamesgreen/) - [GitHub](https://github.com/zachjamesgreen) - zachjamesgreen@gmail.com
 
-Leigh Cepriano Pulzone - [Linkedin](https://www.linkedin.com/in/lcpulzone/) - [GitHub](https://github.com/lcpulzone) - lcpulzone@gmail.com
+* Leigh Cepriano Pulzone - [Linkedin](https://www.linkedin.com/in/lcpulzone/) - [GitHub](https://github.com/lcpulzone) - lcpulzone@gmail.com
 
 #### Front-End Team:
 
-Shawn McMahon - [Linkedin](https://www.linkedin.com/in/shawnpmcmahon/) - [GitHub](https://github.com/shawnmcmahon) - shawnmcmahon17@gmail.com
+* Shawn McMahon - [Linkedin](https://www.linkedin.com/in/shawnpmcmahon/) - [GitHub](https://github.com/shawnmcmahon) - shawnmcmahon17@gmail.com
 
-Ashton Huxtable - [Linkedin](https://www.linkedin.com/in/ashtonhuxtable/) - [GitHub](https://github.com/ashton-huxtable) - aehuxtable@gmail.com
+* Ashton Huxtable - [Linkedin](https://www.linkedin.com/in/ashtonhuxtable/) - [GitHub](https://github.com/ashton-huxtable) - aehuxtable@gmail.com
 
 #### Project Links:
 
-BE Project Link: [CodeHerdAPI](https://github.com/Turing-Project-Manager/CodeHerdAPI)
+* BE Project Link: [CodeHerdAPI](https://github.com/Turing-Project-Manager/CodeHerdAPI)
 
-FE Project Link: [CodeHerd](https://github.com/Turing-Project-Manager/CodeHerd)
+* FE Project Link: [CodeHerd](https://github.com/Turing-Project-Manager/CodeHerd)
 
-Organization Link: [Turing Project Manager](https://github.com/Turing-Project-Manager)
+* Organization Link: [Turing Project Manager](https://github.com/Turing-Project-Manager)
 
 
 
@@ -202,5 +193,3 @@ Organization Link: [Turing Project Manager](https://github.com/Turing-Project-Ma
 [stars-url]: https://github.com/Turing-Project-Manager/CodeHerdAPI/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Turing-Project-Manager/CodeHerdAPI.svg?style=for-the-badge
 [issues-url]: https://github.com/Turing-Project-Manager/CodeHerdAPI/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
