@@ -8,8 +8,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://codeherd.herokuapp.com/">
+    <img src="https://github.com/Turing-Project-Manager/CodeHerd/blob/main/src/assets/elephant.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">CodeHerdAPI</h3>
@@ -138,7 +138,7 @@ graphdoc -e http://localhost:3000/graphql -o ./public
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](issues-url) for a list of proposed features (and known issues).
 
 
 
