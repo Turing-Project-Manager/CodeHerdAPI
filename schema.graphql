@@ -401,5 +401,5 @@ type User {
   name: String
   pronouns: String
   slackHandle: String
-  workingStyles: [String!]
+  workingStyles: String
 }
