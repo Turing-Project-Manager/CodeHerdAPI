@@ -7,7 +7,8 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins ENV['CORS_ORIGINS']
+#     origins ENV['CORS_ORIGINS']
+    origins 'http://localhost:3000', 'https://codeherd.herokuapp.com'
 
     resource '/graphql', headers: :any, methods: %i[post delete options head]
     resource '/auth/github', headers: :any, methods: [:get]
