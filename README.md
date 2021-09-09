@@ -1,17 +1,3 @@
-## Seeing the graphql queries and mutations
-
-https://codeherdapi.herokuapp.com/
-
-## Generate Graphql docs
-
-make sure you download the npm package graphdocs npm install -g @2fd/graphdoc
-
-you'll need to start a local server or ping the deployed. This will put the files in the public folder for rails to serve
-
-```
-graphdoc -e http://localhost:3000/graphql -o ./public
-```
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -90,7 +76,7 @@ graphdoc -e http://localhost:3000/graphql -o ./public
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Welcome to CodeHerdAPI, the backend application for a One-App-To-Rule-Them-All approach for Turing students to organize their projects called CodeHerd.   
+Welcome to CodeHerdAPI the backend application for CodeHerd, a One-App-To-Rule-Them-All approach for Turing students to organize their projects.   
 
 With CodeHerd, searching Slack high and low for that one link to that great resource a peer shared or remembering which of the 50 open tabs is the project requirements will be a thing of the past.  CodeHerd gives Turing students one central location for all things related to a project.  
 
@@ -101,16 +87,27 @@ The best thing?  The student will have their body of work in one place to find a
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+* [Ruby on Rails](https://rubyonrails.org/)
+* [GraphQL Ruby](https://graphql-ruby.org/)
+* [Omniauth](https://github.com/omniauth/omniauth)
 
+#### Seeing the graphql queries and mutations
 
+https://codeherdapi.herokuapp.com/
+
+#### Generate Graphql docs
+
+make sure you download the npm package graphdocs npm install -g @2fd/graphdoc
+
+you'll need to start a local server or ping the deployed. This will put the files in the public folder for rails to serve
+
+```
+graphdoc -e http://localhost:3000/graphql -o ./public
+```
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
