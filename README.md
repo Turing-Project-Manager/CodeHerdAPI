@@ -107,16 +107,14 @@ To get a local copy up and running follow these simple example steps.
    ```
 3. Install figaro
    ```rb
-  bundle exec figaro install
+   bundle exec figaro install
    ```
-
 4. In `application.yml` file add the following keys under the exact names:
-  ```rb
-  GitHub key as `GITHUB_KEY`
-  GitHub secret as `GITHUB_SECRET`
-  CORS origin as `CORS_ORIGINS`
-```
-
+   ```rb
+   GitHub key as `GITHUB_KEY`
+   GitHub secret as `GITHUB_SECRET`
+   CORS origin as `CORS_ORIGINS`
+   ```
 5. Run `rails db:{create,migrate}`
 
 
