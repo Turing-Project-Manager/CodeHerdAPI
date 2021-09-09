@@ -113,7 +113,9 @@ To get a local copy up and running follow these simple example steps.
    ```rb
    GitHub key as `GITHUB_KEY`
    GitHub secret as `GITHUB_SECRET`
+    You'll need to create these by creating a Github OAuth app. https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app
    CORS origin as `CORS_ORIGINS`
+    This ENV VAR is to set the allowed origins for CORS
    ```
 5. Run `rails db:{create,migrate}`
 
