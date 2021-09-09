@@ -12,14 +12,6 @@ you'll need to start a local server or ping the deployed. This will put the file
 graphdoc -e http://localhost:3000/graphql -o ./public
 ```
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -39,7 +31,8 @@ graphdoc -e http://localhost:3000/graphql -o ./public
   <h3 align="center">CodeHerdAPI</h3>
 
   <p align="center">
-    A place to corral all things project related.  
+    A place to corral all things project related into one central location.  
+    <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -97,16 +90,13 @@ graphdoc -e http://localhost:3000/graphql -o ./public
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Welcome to CodeHerdAPI, the backend application for a One-App-To-Rule-Them-All approach for Turing students to organize their projects called CodeHerd.   
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+With CodeHerd, searching Slack high and low for that one link to that great resource a peer shared or remembering which of the 50 open tabs is the project requirements will be a thing of the past.  CodeHerd gives Turing students one central location for all things related to a project.  
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+To start, a student will sign into CodeHerd using GitHub authorization, from there they can create a project and begin to gather and store all the information they could ever want.  With their GitHub account already accessible; it's as easy as pie to link a repository to the project they've created.  The student can even hand over the reigns, so to speak, by adding collaborators to their project.  Once added, a collaborator can contribute to the project by adding links to helpful resources and any necessary documentation; they'll also have access to DTR templates, pull request templates, and much more.  
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+The best thing?  The student will have their body of work in one place to find a resource that can help on a future project or determine which two or three projects are perfect to show off their radical coding skills on their resume.  We know CodeHerd holds the promise of becoming a robust application to answer the needs of Turing students.  This is just the first iteration after all!  
 
 ### Built With
 
