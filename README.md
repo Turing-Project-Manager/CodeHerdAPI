@@ -18,14 +18,14 @@
     A place to corral all things project related into one central location.  
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://codeherdapi.herokuapp.com/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://codeherd.herokuapp.com/">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/Turing-Project-Manager/CodeHerdAPI/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/Turing-Project-Manager/CodeHerdAPI/issues">Request Feature</a>
   </p>
 </p>
 
